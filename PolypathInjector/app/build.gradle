@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace "com.polypath.injector"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.polypath.injector"
+        minSdk 26
+        targetSdk 34
+        versionCode 
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:1.12.0"
+}
